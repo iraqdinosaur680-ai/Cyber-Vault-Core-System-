@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --font-mono: "Courier New", monospace;
+  --color-cyber-bg: #020205;
+  --color-cyber-card: #0c0d19;
+  --color-cyber-cyan: #00f0ff;
+  --color-cyber-pink: #ff007f;
+  --color-cyber-green: #00ff9f;
+  --color-cyber-yellow: #f7ff00;
+  --color-cyber-red: #ff3131;
+  --color-cyber-text: #e2e8f0;
+  --color-cyber-grid: #161938;
+}
+
+@layer base {
+  body {
+    @apply bg-cyber-bg text-cyber-text font-mono;
+  }
+}
+
+.cyber-border {
+  border: 1px solid var(--color-cyber-grid);
+}
+
+.glow-cyan {
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.1);
+}
